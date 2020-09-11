@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Know Hymn</title>
+</head>
+
+<body>
+
+    <div id="particles-js">
+        <!-- Navbar -->
+        <div class="container-fluid">
+            <nav class="navbar">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo-black.png" style="height: 50px;" alt="">
+                </a>
+            </nav>
+            <!-- Main Content -->
+            <div class="row vertical-center">
+                <div class="col-lg-6">
+                    <!-- Count Down -->
+                    <div class="flex-container">
+                        <p style="position: absolute;">
+                            / DAYS
+                        </p>
+                        <h1 id="js-day">
+
+                        </h1>
+                        <div class="flex-child l-pt-22 l-pl-16">
+                            <h3 id="js-hour">
+
+                            </h3>
+                            <h4 id="js-second" class="d-inline">
+
+                            </h4>
+                            <p style="position: absolute;" class="d-inline pl-3 l-pt-20">
+                                / SECONDS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 style="padding-top: 56px;">
+                        <span class="text_1">Coming Soon ...</span>
+                        <span class="text_2">Know Hymn</span>
+                    </h2>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer style="position: absolute; bottom: 0;">
+                <p>
+                    © 2020 Sacred Sound Studio LLC.
+                </p>
+            </footer>
+        </div>
+    </div>
+    <!-- Particles -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json',
+            function () {
+                console.log('particles json loaded')
+            })
+    </script>
+    <!-- Count Down -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 6, 2020 12:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            // Get today's date and time
+            var now = new Date().getTime();
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Output the result in an element with id="demo"
+            // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            //     + minutes + "m " + seconds + "s ";
+            document.getElementById("js-day").innerHTML = days;
+            document.getElementById("js-hour").innerHTML = hours + ":" + minutes;
+            document.getElementById("js-second").innerHTML = seconds;
+        }, 1000);
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

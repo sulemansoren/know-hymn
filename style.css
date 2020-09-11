@@ -1,0 +1,150 @@
+* {
+  font-family: "Helvitica Neu";
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(252, 235, 60);
+  /* background-color: #e5e32f; */
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  font-size: 172px;
+  font-weight: 800;
+  margin: 0;
+}
+h2 {
+  font-size: 88px;
+  font-weight: 500;
+  margin: 0;
+}
+h3 {
+  font-size: 78px;
+  font-weight: 700;
+  margin: 0;
+}
+h4 {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0;
+}
+P {
+  font-size: 20px;
+  font-weight: 500;
+}
+.l-pt-22 {
+  padding-top: 22px;
+}
+.l-pl-16 {
+  padding-left: 16px;
+}
+.l-pt-20 {
+  padding-top: 20px;
+}
+#particles-js {
+  height: 100%;
+  width: 100%;
+}
+.vertical-center {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.v-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+}
+
+/* Animation for Coming Soon */
+@keyframes text2 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+
+  60%,
+  90% {
+    width: 21.2em;
+  }
+}
+@keyframes text1 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  
+  10%,
+  40% {
+    width: 17em;
+  }
+}
+
+.text_1 {
+  animation: text1;
+}
+.text_2 {
+  animation: text2;
+}
+.text_1,
+.text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: absolute;
+  animation-duration: 20s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 120px;
+    font-weight: 800;
+    margin: 0;
+  }
+  h2 {
+    font-size: 42px;
+    font-weight: 500;
+    margin: 0;
+  }
+  h3 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+  }
+  h4 {
+    font-size: 32px;
+    font-weight: 100;
+    margin: 0;
+  }
+  P {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .l-pt-22 {
+    padding-top: 18px;
+  }
+  .l-pl-16 {
+    padding-left: 16px;
+  }
+  .l-pt-20 {
+    padding-top: 12px;
+  }
+}
